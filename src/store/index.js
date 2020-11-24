@@ -1,15 +1,13 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vuex from 'vuex';
+import Vue from 'vue';
+import Countries from './modules/countries.js';
 
-Vue.use(Vuex)
+// load vuex
+Vue.use(Vuex);
 
+// create store
 export default new Vuex.Store({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
-  }
-})
+    modules: {
+        Countries
+    }
+});
