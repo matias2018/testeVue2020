@@ -25,7 +25,7 @@ export default {
         z-index: 1;
 
         .back{
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: bold;
             &:hover{
                 color: #fff;
