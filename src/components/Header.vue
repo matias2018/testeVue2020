@@ -21,7 +21,7 @@ export default {
         width: 100%;
         background: linear-gradient(to bottom, #42b983 70%, #fff 30% );
         color: #fff;
-        padding: 1.5rem;
+        padding: 1.1rem;
         z-index: 1;
 
         .back{

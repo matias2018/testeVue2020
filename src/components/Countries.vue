@@ -77,7 +77,7 @@ form {
         margin-bottom: 2rem;
         background: #fff;
         position: fixed;
-        top: 11vh;
+        top: 10vh;
         left: 0;
         z-index: 1;
     }
