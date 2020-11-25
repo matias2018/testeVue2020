@@ -18,8 +18,8 @@ export default {
         position: sticky;
         top: 0;
         left: 0;
-        width: 100vw;
-        background: #42b983;
+        width: 100%;
+        background: linear-gradient(to bottom, #42b983 70%, #fff 30% );
         color: #fff;
         padding: 1.5rem;
         z-index: 1;

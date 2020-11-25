@@ -19,7 +19,9 @@
                         capital:country.capital,
                         region:country.region,
                         subregion:country.subregion,
-                        population:country.population
+                        population:country.population,
+                        area:country.area,
+                        borders:country.borders
                         } 
                     }" 
                 v-for="country in filteredCountries" 
@@ -27,7 +29,9 @@
             >
                 <li class="country">
                     <div class="link">
-                        {{ country.name }}
+                        <p>
+                            {{ country.name }}
+                        </p>
                     </div>
                 
                     <div class="flag_display">
@@ -66,7 +70,7 @@ export default {
 };
 
 </script>
-<style scoped>
+<style lang="scss" scoped>
 form {
         display: flex;
         width: 100vw;
@@ -92,17 +96,18 @@ form {
     }
 
     .countries {
-        width: 90vw;
-        display: grid;
-        margin: 0 auto;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 1rem;
+        max-width: 99%;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
     }
 
     .country {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         background: #41b883;
+        height: 50px;
         padding: 1.5rem;
         margin: 1rem 0;
         text-align: center;
@@ -111,6 +116,17 @@ form {
         font-size: 1.6rem;
         font-weight: bold;
         color: #fff;
+
+        .link {
+            p {
+                text-align: left;
+                width: 150px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+        
     }
 
     .country:hover{
@@ -134,6 +150,7 @@ form {
     @media (min-width: 768px) {
         .countries {
         width: 100%;
+        margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 1rem;

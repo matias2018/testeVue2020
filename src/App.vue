@@ -13,7 +13,8 @@
 * {
   margin: 0;
   padding: 0;
-  border-box: box-sizing;
+  box-sizing: border-box;
+  transition: 0.3s ease;
 
   a {
     color: #fff;
