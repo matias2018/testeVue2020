@@ -2,7 +2,7 @@
     <header>
         <h1>Countries Test</h1>
         <div id="nav">
-            <router-link to="/">Home</router-link>
+            <router-link to="/"><p class="back">Back Home</p></router-link>
         </div>
     </header>
 </template>
@@ -23,5 +23,13 @@ export default {
         color: #fff;
         padding: 1.5rem;
         z-index: 1;
+
+        .back{
+            font-size: 2rem;
+            font-weight: bold;
+            &:hover{
+                color: #fff;
+            }
+        }
     }
 </style>
